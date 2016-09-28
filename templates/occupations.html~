@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><title>Occupations</title></head>
+
+<body>
+
+  <table>
+
+    <tr><th>Occupations</th> <th>Percentage</th></tr>
+
+    {% for element in dictionary %}
+
+    <tr><td> {{ element }} </td> <td> {{ dictionary[element] }} </tr>
+
+    {% endfor %}
+
+  </table>
+
+  <br>
+
+  <p>Your occupation is: {{future}}</p>
+
+</body>
+
+</html>
